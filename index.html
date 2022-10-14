@@ -3,10 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <canvas width="4000" height="3000" id="canvas" class="canvas"></canvas>
+
+      <div class="changeBack">
+        <!-- <img src="./img/icon-img.svg" class="clearIcon" alt="clearBtn" /> -->
+      </div>
+      <div class="notice js-notice">Push to draw</div>
+      <div class="info">
+        <div class="info__content">
+          <button type="button" class="js-clear-btn">
+            ClearAll:&nbsp
+            <!-- пробел/space &nbsp-->
+            <img src="./img/icon-cross.svg" class="clearIcon" alt="clearBtn" />
+          </button>
+          <ul class="colorBtn-list js-colorBtn-list">
+            <li
+              class="colorBtn-list__item js-yellow-btn"
+              data-hex="#fffc56"
+              data-rgb="rgba(255, 252, 86, 0.745)"
+            ></li>
+            <li
+              class="colorBtn-list__item js-red-btn"
+              data-hex="#ff2a2a"
+              data-rgb="rgba(255, 42, 42, 0.719)"
+            ></li>
+            <li
+              class="colorBtn-list__item js-green-btn"
+              data-hex="#42ffa1"
+              data-rgb="rgba(66, 255, 161, 0.719)"
+            ></li>
+            <li
+              class="colorBtn-list__item js-blue-btn"
+              data-hex="#42f9ff"
+              data-rgb="rgba(66, 249, 255, 0.705)"
+            ></li>
+            <li
+              class="colorBtn-list__item js-pinck-btn"
+              data-hex="#ff00ff"
+              data-rgb="rgba(255, 0, 255, 0.767)"
+            ></li>
+            <li
+              class="colorBtn-list__item js-black-btn"
+              data-hex="#212121"
+              data-rgb="rgba(33, 33, 33, 0.733)"
+            ></li>
+          </ul>
+
+          <button
+            type="button"
+            class="js-clear-btn"
+            onclick="window.location.href = './funnyDrawing.html';"
+          >
+            NextPage
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js" type="module"></script>
   </body>
 </html>
